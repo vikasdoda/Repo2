@@ -1,0 +1,62 @@
+{
+	"operations": [
+		{
+			"testName": "Android random getLicense",
+			"usage": "getLicense",
+			"sessionKeys": [
+				{
+					"keyId": "98ED21E4-33D5-0E0D-4DE0-3B46BAB2D91C",
+					"keyValue": "/NEBNjswYiaoCXyStRV1rA==",
+					"usage": "Encryption key"
+				},
+				{
+					"keyId": "41126D03-A82F-546B-0370-21854B104917",
+					"keyValue": "c0mpyUheB4Ox3es6zparCA==",
+					"usage": "Signing key"
+				}
+			],
+			"persistedLicense": "true"
+		},
+		{
+			"testName": "Restart",
+			"usage": "restart"
+		},
+		{
+			"testName": "Android random encrypt after restart persisted license",
+			"usage": "encrypt",
+			"inputBuffer": "uJiaXad6b0Wgr1hIAnUcxFmovI4Bvf2YfflvMHgPdjocJJXS4QZ6Q8AFbbthCGmvkM0ZWcPKv5i+7dZUBA/rvw==",
+			"keyId": "98ED21E4-33D5-0E0D-4DE0-3B46BAB2D91C",
+			"iv": "KdXTbmkVHkIT70xyhHHh8A==",
+			"expectedOutput": "VIppEC0rWcQwXoqjxSCnackhLs37BUfhp2M1QeD1wMONmYBmVOiG+Wf3U9Q1mUAmQskw1yJbhZYBdd+w5txgiQ=="
+		},
+		{
+			"testName": "Android random decrypt after restart persisted license",
+			"usage": "decrypt",
+			"inputBuffer": "9gSNvzDTkXZpEaYs9nEhmw==",
+			"keyId": "98ED21E4-33D5-0E0D-4DE0-3B46BAB2D91C",
+			"iv": "m8nQbEAKVT57aqXmtA1qgw==",
+			"expectedOutput": "pcn+VtXZ41RiZTuHaIqrjg=="
+		},
+		{
+			"testName": "Android random sign after restart persisted license",
+			"usage": "sign",
+			"inputBuffer": "cpAlHmujr60pNF46Fjyh4819ihXQ6Wms/nL8B6GtIt+YbxHDJvl2yEJ8YmhDM94YI13Rbh2Pkgqbu1W7Pi1lvUG9mV9oP/71H48zS1Td5BBRRWUjtlc3sagvnZ/eEjoYQonG0Od6w1ObrY2KTSII3bH6IzE6PH51U7puoUNBuA==",
+			"keyId": "41126D03-A82F-546B-0370-21854B104917",
+			"expectedOutput": "LQyA+4Hsba/JDFmflVFxF2hYDrLZaTpD740undU/s00="
+		},
+		{
+			"testName": "Android random verify Ok after restart persisted license",
+			"usage": "verify",
+			"inputBuffer": "DPhbefJAaHJaFn48Byj2hYkdZ4OmgaUZnknvPM0q32+Q6fJKfMcf1Ve77+xgiRKYMh77attdECImElMXgR+98uylUtT9m2Tr1370J4ChD0cyqJBTWRrJV9LDfbbnOSY7+LJ1UmtNdNDnCla8UI3sDikgkD8gNwz0a8FuwvB4iQYTFTK2xmnqmGglQMGC47HmdOKRCWoV3Eqvsbt+LYlY",
+			"keyId": "41126D03-A82F-546B-0370-21854B104917",
+			"expectedOutput": "Ok"
+		},
+		{
+			"testName": "Android random verify Nok after restart persisted license",
+			"usage": "verify",
+			"inputBuffer": "EIkiKNF4tuDj0a9rw2GA/KMllZphsJOy1PB6UGd5p6wA",
+			"keyId": "41126D03-A82F-546B-0370-21854B104917",
+			"expectedOutput": "Nok"
+		}
+	]
+}

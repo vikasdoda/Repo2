@@ -1,0 +1,209 @@
+{
+	"operations": [{
+			"testName": "Get License",
+			"usage": "getLicense",
+			"sessionKeys": [{
+					"keyId": "3E1AA5C1-F5AC-038F-E525-61BAC6B59A45",
+					"keyValue": "v1I1Kn2026KBysrV+hu/qg==",
+					"usage": "Encryption key"
+				},
+				{
+					"keyId": "48FB3036-784F-BCF4-CA05-D47B2B228FFE",
+					"keyValue": "FMjgNQQ6rR0xNAciw6JaiA==",
+					"usage": "Signing key"
+				},
+				{
+					"keyId": "3E2AA5C1-F5AC-038F-E525-61BAC6B59A45",
+					"keyValue": "v2I1Kn2026KBysrV+hu/qg==",
+					"usage": "Encryption key"
+				},
+				{
+					"keyId": "48FB3036-784F-BCF4-CA05-D47B2B238FFE",
+					"keyValue": "FMjgNQQ1rR0xNAciw1JaiA==",
+					"usage": "Signing key"
+				},
+				{
+					"keyId": "3E3AA5C1-F5AC-038F-E525-61BAC6B59A45",
+					"keyValue": "v3I1Kn2026KBysrV+hu/qg==",
+					"usage": "Encryption key"
+				},
+				{
+					"keyId": "48FB3036-784F-BCF4-CA05-D47B2B248FFE",
+					"keyValue": "FMjgNQQ2rR0xNAciw2JaiA==",
+					"usage": "Signing key"
+				},
+				{
+					"keyId": "3E4AA5C1-F5AC-038F-E525-61BAC6B59A45",
+					"keyValue": "v4I1Kn2026KBysrV+hu/qg==",
+					"usage": "Encryption key"
+				},
+				{
+					"keyId": "48FB3036-784F-BCF4-CA05-D47B2B258FFE",
+					"keyValue": "FMjgNQQ3rR0xNAciw3JaiA==",
+					"usage": "Signing key"
+				},
+				{
+					"keyId": "3E5AA5C1-F5AC-038F-E525-61BAC6B59A45",
+					"keyValue": "v5I1Kn2026KBysrV+hu/qg==",
+					"usage": "Encryption key"
+				},
+				{
+					"keyId": "48FB3036-784F-BCF4-CA05-D47B2B268FFE",
+					"keyValue": "FMjgNQQ4rR0xNAciw4JaiA==",
+					"usage": "Signing key"
+				},
+				{
+					"keyId": "3E6AA5C1-F5AC-038F-E525-61BAC6B59A45",
+					"keyValue": "v6I1Kn2026KBysrV+hu/qg==",
+					"usage": "Encryption key"
+				},
+				{
+					"keyId": "48FB3036-784F-BCF4-CA05-D47B2B278FFE",
+					"keyValue": "FMjgNQQ5rR0xNAciw5JaiA==",
+					"usage": "Signing key"
+				},
+				{
+					"keyId": "3E7AA5C1-F5AC-038F-E525-61BAC6B59A45",
+					"keyValue": "v7I1Kn2026KBysrV+hu/qg==",
+					"usage": "Encryption key"
+				},
+				{
+					"keyId": "48FB3036-784F-BCF4-CA05-D47B2B288FFE",
+					"keyValue": "FMjgNQQ7rR0xNAciw7JaiA==",
+					"usage": "Signing key"
+				},
+				{
+					"keyId": "3E8AA5C1-F5AC-038F-E525-61BAC6B59A45",
+					"keyValue": "v8I1Kn2026KBysrV+hu/qg==",
+					"usage": "Encryption key"
+				},
+				{
+					"keyId": "48FB3036-784F-BCF4-CA05-D47B2B298FFE",
+					"keyValue": "FMjgNQQ8rR0xNAciw8JaiA==",
+					"usage": "Signing key"
+				}
+			],
+			"persistedLicense": "true"
+		},
+		{
+			"_comment": "<----------------First Pair of Encryption and Signing---------------->",
+			"testName": "IOS static encrypt with % 16 padding",
+			"usage": "encrypt",
+			"inputBuffer": "V2VsY29tZSBUbyBOYWdyYVZpc2lvbiBTQSBJbmRpYSA=",
+			"keyId": "3E1AA5C1-F5AC-038F-E525-61BAC6B59A45",
+			"iv": "jdESeFjad64WRB1j9ZJ2Xw==",
+			"expectedOutput": "ScwNzCeC4gWV7SMI85HI+nobxrhnZNYIUVx6dNqkFzWLL9V0Egps5LFHQhnuXf7A"
+		},
+		{
+			"testName": "IOS static decrypt with % 16 padding",
+			"usage": "decrypt",
+			"inputBuffer": "ScwNzCeC4gWV7SMI85HI+nobxrhnZNYIUVx6dNqkFzWLL9V0Egps5LFHQhnuXf7A",
+			"keyId": "3E1AA5C1-F5AC-038F-E525-61BAC6B59A45",
+			"iv": "jdESeFjad64WRB1j9ZJ2Xw==",
+			"expectedOutput": "V2VsY29tZSBUbyBOYWdyYVZpc2lvbiBTQSBJbmRpYSA="
+		},
+		{
+			"testName": "IOS static sign",
+			"usage": "sign",
+			"inputBuffer": "V2VsY29tZSBUbyBOYWdyYVZpc2lvbiBTQSBTd2lzcyA=",
+			"keyId": "48FB3036-784F-BCF4-CA05-D47B2B228FFE",
+			"expectedOutput": "aQ36ssuqzNdfh+swyYG8aw=="
+		},
+		{
+			"testName": "IOS static verify Ok",
+			"usage": "verify",
+			"inputBuffer": "V2VsY29tZSBUbyBOYWdyYVZpc2lvbiBTQSBTd2lzcyA=",
+			"keyId": "48FB3036-784F-BCF4-CA05-D47B2B228FFE",
+			"iv": "aQ36ssuqzNdfh+swyYG8aw==",
+			"expectedOutput": "Ok"
+		},
+		{
+			"testName": "IOS static verify Nok",
+			"usage": "verify",
+			"inputBuffer": "V2VsY29tZSBUbyBOYWdyYVZpc2lvbiBTQSBTd2lzcyA=",
+			"keyId": "48FB3036-784F-BCF4-CA05-D47B2B228FFE",
+			"iv": "uNcI/SXWxqnO/RyPr",
+			"expectedOutput": "Error"
+		},
+		{
+			"_comment": "<----------------Fifth Pair of Encryption and Signing---------------->",
+			"testName": "IOS static encrypt with % 16 padding",
+			"usage": "encrypt",
+			"inputBuffer": "V2VsY29tZSBUbyBOYWdyYVZpc2lvbiBTQSBJbmRpYSA=",
+			"keyId": "3E5AA5C1-F5AC-038F-E525-61BAC6B59A45",
+			"iv": "jdESeFjad64WRB1j9ZJ2Xw==",
+			"expectedOutput": "U2rZna04afEl42bD7XfyR+kOPkspVXtF5GIiTZxm/xbfW5+cX2pWxdAmcMeyE18x"
+		},
+		{
+			"testName": "IOS static decrypt with % 16 padding",
+			"usage": "decrypt",
+			"inputBuffer": "U2rZna04afEl42bD7XfyR+kOPkspVXtF5GIiTZxm/xbfW5+cX2pWxdAmcMeyE18x",
+			"keyId": "3E5AA5C1-F5AC-038F-E525-61BAC6B59A45",
+			"iv": "jdESeFjad64WRB1j9ZJ2Xw==",
+			"expectedOutput": "V2VsY29tZSBUbyBOYWdyYVZpc2lvbiBTQSBJbmRpYSA="
+		},
+		{
+			"testName": "IOS static sign",
+			"usage": "sign",
+			"inputBuffer": "V2VsY29tZSBUbyBOYWdyYVZpc2lvbiBTQSBTd2lzcyA=",
+			"keyId": "48FB3036-784F-BCF4-CA05-D47B2B268FFE",
+			"expectedOutput": "R0zVX1mvHVZc5eB2+txkIQ=="
+		},
+		{
+			"testName": "IOS static verify Ok",
+			"usage": "verify",
+			"inputBuffer": "V2VsY29tZSBUbyBOYWdyYVZpc2lvbiBTQSBTd2lzcyA=",
+			"keyId": "48FB3036-784F-BCF4-CA05-D47B2B268FFE",
+			"iv": "Aq3C2Tfrym6sQH8excHfTw==",
+			"expectedOutput": "Ok"
+		},
+		{
+			"testName": "IOS static verify Nok",
+			"usage": "verify",
+			"inputBuffer": "V2VsY29tZSBUbyBOYWdyYVZpc2lvbiBTQSBTd2lzcyA=",
+			"keyId": "48FB3036-784F-BCF4-CA05-D47B2B268FFE",
+			"iv": "uNcI/SXWxqnO/RyPr",
+			"expectedOutput": "Error"
+		},
+		{
+			"_comment": "<----------------Eighth Pair of Encryption and Signing---------------->",
+			"testName": "IOS static encrypt with % 16 padding",
+			"usage": "encrypt",
+			"inputBuffer": "V2VsY29tZSBUbyBOYWdyYVZpc2lvbiBTQSBJbmRpYSA=",
+			"keyId": "3E8AA5C1-F5AC-038F-E525-61BAC6B59A45",
+			"iv": "jdESeFjad64WRB1j9ZJ2Xw==",
+			"expectedOutput": "YcTXNsvMe7vC/NAc2hZEJsRA5Mbzxj3RlOLfAUUnwTs7A35vjrGRBCQA/kUSuEKt"
+		},
+		{
+			"testName": "IOS static decrypt with % 16 padding",
+			"usage": "decrypt",
+			"inputBuffer": "YcTXNsvMe7vC/NAc2hZEJsRA5Mbzxj3RlOLfAUUnwTs7A35vjrGRBCQA/kUSuEKt",
+			"keyId": "3E8AA5C1-F5AC-038F-E525-61BAC6B59A45",
+			"iv": "jdESeFjad64WRB1j9ZJ2Xw==",
+			"expectedOutput": "V2VsY29tZSBUbyBOYWdyYVZpc2lvbiBTQSBJbmRpYSA="
+		},
+		{
+			"testName": "IOS static sign",
+			"usage": "sign",
+			"inputBuffer": "V2VsY29tZSBUbyBOYWdyYVZpc2lvbiBTQSBTd2lzcyA=",
+			"keyId": "48FB3036-784F-BCF4-CA05-D47B2B298FFE",
+			"expectedOutput": "DAl/pnzYXypKGLZ9/L6Vug=="
+		},
+		{
+			"testName": "IOS static verify Ok",
+			"usage": "verify",
+			"inputBuffer": "V2VsY29tZSBUbyBOYWdyYVZpc2lvbiBTQSBTd2lzcyA=",
+			"keyId": "48FB3036-784F-BCF4-CA05-D47B2B298FFE",
+			"iv": "iLZhBm+m/o/kdYmi09fDMQ==",
+			"expectedOutput": "Ok"
+		},
+		{
+			"testName": "IOS static verify Nok",
+			"usage": "verify",
+			"inputBuffer": "V2VsY29tZSBUbyBOYWdyYVZpc2lvbiBTQSBTd2lzcyA=",
+			"keyId": "48FB3036-784F-BCF4-CA05-D47B2B298FFE",
+			"iv": "uNcI/SXWxqnO/RyPr",
+			"expectedOutput": "Error"
+		}
+	]
+}

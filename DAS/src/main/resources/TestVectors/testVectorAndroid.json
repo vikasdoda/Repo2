@@ -1,0 +1,149 @@
+{
+	"operations": [
+		{
+			"testName": "Android static getLicense",
+			"usage": "getLicense",
+			"sessionKeys": [
+				{
+					"keyId": "2A1E05AD-D8F2-BEAA-8CC3-AF9EA7DF221D",
+					"keyValue": "rz7ErRhzls/A1LPrwZ3m9w==",
+					"usage": "Encryption key"
+				},
+				{
+					"keyId": "9063BD1D-8BFC-BEDA-BF39-3EC3BBE70C6A",
+					"keyValue": "9R9FLN42FvJWZU4dp2cqIQ==",
+					"usage": "Signing key"
+				}
+			],
+			"persistedLicense": "true"
+		},
+		{
+			"testName": "Android static encrypt",
+			"usage": "encrypt",
+			"inputBuffer": "CRqrOm9uT6+KdVx4ggUc5i3YQg78cLLuhbhbHrFVBIiBmjqSsVFFYOpeP+fMhmcglT756Chh8xdx2zr0PYAf1w==",
+			"keyId": "2A1E05AD-D8F2-BEAA-8CC3-AF9EA7DF221D",
+			"iv": "YPRsvJi2laVem+nb0yJLIQ==",
+			"expectedOutput": "YIeyUdTKb8wiVA+oC9EpBdBxOQ2SfKd+4pPVwOjZIDGo+wDcPW+wcybt0vYVTASD5M6rUYz+lxsIbknqW1fZ/w=="
+		},
+		{
+			"testName": "Android static decrypt",
+			"usage": "decrypt",
+			"inputBuffer": "YIeyUdTKb8wiVA+oC9EpBdBxOQ2SfKd+4pPVwOjZIDGo+wDcPW+wcybt0vYVTASD5M6rUYz+lxsIbknqW1fZ/w==",
+			"keyId": "2A1E05AD-D8F2-BEAA-8CC3-AF9EA7DF221D",
+			"iv": "YPRsvJi2laVem+nb0yJLIQ==",
+			"expectedOutput": "CRqrOm9uT6+KdVx4ggUc5i3YQg78cLLuhbhbHrFVBIiBmjqSsVFFYOpeP+fMhmcglT756Chh8xdx2zr0PYAf1w=="
+		},
+		{
+			"testName": "Android static sign",
+			"usage": "sign",
+			"inputBuffer": "WQKfKd9+r7bDcnqDVTDnDSq4afuAgEXDO4H4E7NJfMhoSK/Mc00l2FxSTk3GPv+IK2taoCo3X1pDP3ZWymVVaiCJL/nRjno1dfdaPkbl40F7fRk9BgLma5fZTDoHArldCeVnNlAjr/D/5TaU5Z4IfUx+Xq2aqrd0SGLCk3OreA==",
+			"keyId": "9063BD1D-8BFC-BEDA-BF39-3EC3BBE70C6A",
+			"expectedOutput": "1tqkDxiCIR4VP05FiLy7RD22hTI4hBNqJEfeMyvg1Qs="
+		},
+		{
+			"testName": "Android static verify Ok",
+			"usage": "verify",
+			"inputBuffer": "WQKfKd9+r7bDcnqDVTDnDSq4afuAgEXDO4H4E7NJfMhoSK/Mc00l2FxSTk3GPv+IK2taoCo3X1pDP3ZWymVVaiCJL/nRjno1dfdaPkbl40F7fRk9BgLma5fZTDoHArldCeVnNlAjr/D/5TaU5Z4IfUx+Xq2aqrd0SGLCk3OreNbapA8YgiEeFT9ORYi8u0Q9toUyOIQTaiRH3jMr4NUL",
+			"keyId": "9063BD1D-8BFC-BEDA-BF39-3EC3BBE70C6A",
+			"expectedOutput": "Ok"
+		},
+		{
+			"testName": "Android static verify Nok",
+			"usage": "verify",
+			"inputBuffer": "WQKfKd9+r7bDcnqDVTDnDSq4afuAgEXDO4H4E7NJfMhoSK/Mc00l2FxSTk3GPv+IK2taoCo3X1pDP3ZWymVVaiCJL/nRjno1dfdaPkbl40F7fRk9BgLma5fZTDoHArldCeVnNlAjr/D/5TaU5Z4IfUx+Xq2aqrd0SGLCk3OreNbapA8YgiEeFT9ORYi8u0Q9toUyOIQTaiRH3jMr4NULAA==",
+			"keyId": "9063BD1D-8BFC-BEDA-BF39-3EC3BBE70C6A",
+			"expectedOutput": "Nok"
+		},
+		{
+			"testName": "Android random getLicense",
+			"usage": "getLicense",
+			"sessionKeys": [
+				{
+					"keyId": "84BDC721-665A-78B0-D4F5-FF1D123B18D4",
+					"keyValue": "UcxYPhr8OCXU2E3o57c39Q==",
+					"usage": "Encryption key"
+				},
+				{
+					"keyId": "E198B5F6-84E6-DF33-6104-99EE4A4CC1F6",
+					"keyValue": "afhtPpoi4wVcgaUlMBgPdg==",
+					"usage": "Signing key"
+				}
+			],
+			"persistedLicense": "false"
+		},
+		{
+			"testName": "Android random encrypt",
+			"usage": "encrypt",
+			"inputBuffer": "C38gZIjUcCoFVrBq5CFtMagv0BY1BV6guyHwVLhoEJ1h7pKFSsadz7NqE17+bG1x8IgvsXfGTMYlsGZTk7On6Q==",
+			"keyId": "84BDC721-665A-78B0-D4F5-FF1D123B18D4",
+			"iv": "hGoO2RZlVFba0fVV/rzBtg==",
+			"expectedOutput": "Ew2x9mft/8ZGPPAlQXLELtp+6sPPbSXaIpU9Je9Wpl5r2Wj0qL4zoT0P1yILgrNIwGG95c3Ro6MG3zcl1mSHXw=="
+		},
+		{
+			"testName": "Android random decrypt",
+			"usage": "decrypt",
+			"inputBuffer": "TE60d4AozOAeM7MlOtPlYw==",
+			"keyId": "84BDC721-665A-78B0-D4F5-FF1D123B18D4",
+			"iv": "k0p3lpVQveIbnXXGflpUbw==",
+			"expectedOutput": "otstjpMHTFikNZJg7MQbnw=="
+		},
+		{
+			"testName": "Android random sign",
+			"usage": "sign",
+			"inputBuffer": "9KqlK4JGEEXp9s2YjMBjuMs4jdL5uFZqLc/7nVkM6IpVAnQo+y/vo6VMbAeAV6pv4XQFT+4ktrjqVfX2hN3UKqYq2FhsBx5v9uoRDdi47wRpyEFWOur4SCVNIa5d/wqY7/UvMQ/NnO0tL0l7gRkOS6yZjlTaVTsd1sjmqQ+yzA==",
+			"keyId": "E198B5F6-84E6-DF33-6104-99EE4A4CC1F6",
+			"expectedOutput": "gFvR++c4rfSdd3ubUuHNKvH4RPRwvhlC6+GDa2pDMvI="
+		},
+		{
+			"testName": "Android random verify Ok",
+			"usage": "verify",
+			"inputBuffer": "lbOAh28yHAFxFI0kbry64ZcvLvPzjDR/tIpuu6UD+rKLWFuY4Wd+Pr6A7AnUUyzUvjvYUiQIdRCvZJVIx69C5Gm9+6WXkevfxLIUZV4Cw90VRkcnEplzTIAkj4U812s0INm4Te415brHgnWWxHf6Pl/wI/hs9f/N3OqFnAJDovFTLyce7XSs6pNUIriQhE5+hKQSXXIeozILJjQQkJdT",
+			"keyId": "E198B5F6-84E6-DF33-6104-99EE4A4CC1F6",
+			"expectedOutput": "Ok"
+		},
+		{
+			"testName": "Android random verify Nok",
+			"usage": "verify",
+			"inputBuffer": "N3xzPxyX6ou5ATFPkgJr07RLJxW0GkclhQBPj8Fk8NYA",
+			"keyId": "E198B5F6-84E6-DF33-6104-99EE4A4CC1F6",
+			"expectedOutput": "Nok"
+		},
+		{
+			"testName": "Android random encrypt with deprecated license",
+			"usage": "encrypt",
+			"inputBuffer": "SZibVyFxmELtX3XIY/kovygVgbQhdlkyFPQqio3R0nONZuapQYDoQdLKIJn7uanMmQ7/ZWfdNL+5SB6dyw3LEg==",
+			"keyId": "2A1E05AD-D8F2-BEAA-8CC3-AF9EA7DF221D",
+			"iv": "1PJrzptUzA0YGHyeHypk0w==",
+			"expectedOutput": ""
+		},
+		{
+			"testName": "Android random decrypt with deprecated license",
+			"usage": "decrypt",
+			"inputBuffer": "FMXYCmWs8oQkBbX+vEStOQ==",
+			"keyId": "2A1E05AD-D8F2-BEAA-8CC3-AF9EA7DF221D",
+			"iv": "0CfAfl0bAoNpf81sAqj3ag==",
+			"expectedOutput": ""
+		},
+		{
+			"testName": "Android random sign with deprecated license",
+			"usage": "sign",
+			"inputBuffer": "l84ez6yPpR8/1LqQrBSCaeQxyHWAZQRbdYa32/poztoWOyTDzhPYgnlmx3r9Sdvy5Pl194OXitkxAcN4lkh87ez/pABmjEeerdIgPUtqRKuZbgRwiVTQM1q81xAPjRCAE2E3YoSylYhLqTzaLDgVgK2W+RsA4RrRdXc2eDkJuQ==",
+			"keyId": "9063BD1D-8BFC-BEDA-BF39-3EC3BBE70C6A",
+			"expectedOutput": ""
+		},
+		{
+			"testName": "Android random verify Ok with deprecated license",
+			"usage": "verify",
+			"inputBuffer": "a3OiRI+biTSPwX1cmY5BIVLITIPbu2udTRE367ib4IaAPG8ONflnInlJSIGiDt92pT3xUwMSj8Hp1QLR6Ac9D0ZrW7O6jdzB0QjqhKXWYO6yKDDlcrk2Vbm8Cjka4LavIimIk66ZTKr6wNkIHQcyIv45Pe5ao/ezFrYM7/EzjRuGs6bSqv89kb4prCLOx4W6V9bZhqNF4i+xOy1h6Noe",
+			"keyId": "9063BD1D-8BFC-BEDA-BF39-3EC3BBE70C6A",
+			"expectedOutput": "Nok"
+		},
+		{
+			"testName": "Android random verify Nok with deprecated license",
+			"usage": "verify",
+			"inputBuffer": "Z+ABMcNGe3/eoEDk6EdpSQGw6zbunCiO059w+84AtkwA",
+			"keyId": "9063BD1D-8BFC-BEDA-BF39-3EC3BBE70C6A",
+			"expectedOutput": "Nok"
+		}
+	]
+}

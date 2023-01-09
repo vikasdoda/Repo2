@@ -1,0 +1,38 @@
+{
+	"operations": [{
+		"_comment": "<----------------First Pair of Encryption and Signing---------------->",
+		"testName": "IOS static encrypt with % 16 padding",
+		"usage": "encrypt",
+		"inputBuffer": "V2VsY29tZSBUbyBOYWdyYVZpc2lvbiBTQSBJbmRpYSA=",
+		"keyId": "3E1AA5C1-F5AC-038F-E525-61BAC6B59A45",
+		"iv": "jdESeFjad64WRB1j9ZJ2Xw==",
+		"expectedOutput": "ScwNzCeC4gWV7SMI85HI+nobxrhnZNYIUVx6dNqkFzWLL9V0Egps5LFHQhnuXf7A"
+	}, {
+		"testName": "IOS static decrypt with % 16 padding",
+		"usage": "decrypt",
+		"inputBuffer": "ScwNzCeC4gWV7SMI85HI+nobxrhnZNYIUVx6dNqkFzWLL9V0Egps5LFHQhnuXf7A",
+		"keyId": "3E1AA5C1-F5AC-038F-E525-61BAC6B59A45",
+		"iv": "jdESeFjad64WRB1j9ZJ2Xw==",
+		"expectedOutput": "V2VsY29tZSBUbyBOYWdyYVZpc2lvbiBTQSBJbmRpYSA="
+	}, {
+		"testName": "IOS static sign",
+		"usage": "sign",
+		"inputBuffer": "V2VsY29tZSBUbyBOYWdyYVZpc2lvbiBTQSBTd2lzcyA=",
+		"keyId": "48FB3036-784F-BCF4-CA05-D47B2B228FFE",
+		"expectedOutput": "aQ36ssuqzNdfh+swyYG8aw=="
+	}, {
+		"testName": "IOS static verify Ok",
+		"usage": "verify",
+		"inputBuffer": "V2VsY29tZSBUbyBOYWdyYVZpc2lvbiBTQSBTd2lzcyA=",
+		"keyId": "48FB3036-784F-BCF4-CA05-D47B2B228FFE",
+		"iv": "Z0vdIpr2t5VqvXBwMkw1sg==",
+		"expectedOutput": "Ok"
+	}, {
+		"testName": "IOS static verify Nok",
+		"usage": "verify",
+		"inputBuffer": "V2VsY29tZSBUbyBOYWdyYVZpc2lvbiBTQSBTd2lzcyA=",
+		"keyId": "48FB3036-784F-BCF4-CA05-D47B2B228FFE",
+		"iv": "uNcI/SXWxqnO/RyPr",
+		"expectedOutput": "Error"
+	}]
+}

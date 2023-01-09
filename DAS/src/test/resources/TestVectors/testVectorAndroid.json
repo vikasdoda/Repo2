@@ -1,0 +1,211 @@
+{
+	"operations": [
+		{
+			"usage": "getLicense",
+			"sessionKeys": [
+				{
+					"keyValue": "v1I1Kn2026KBysrV+hu/qg==",
+					"usage": "Encryption key",
+					"keyId": "3E1AA5C1-F5AC-038F-E525-61BAC6B59A45"
+				},
+				{
+					"keyValue": "s93fh9HPwLBMklMjH/ibnjdO8vQk7ce39LLBDjl2jug=",
+					"usage": "Signing key",
+					"keyId": "2685086E-E9CB-5835-B063-AB20786FFD78"
+				},
+				{
+					"keyValue": "v2I1Kn2026KBysrV+hu/qg==",
+					"usage": "Encryption key",
+					"keyId": "3E1AA5C1-F5AC-038F-E525-62BAC6B59A45"
+				},
+				{
+					"keyValue": "s93fh9HPwLBMklMjH/ibnjdO8vQk7ce39LLBDjl3jug=",
+					"usage": "Signing key",
+					"keyId": "3685086E-E9CB-5835-B063-AB20786FFD78"
+				},
+				{
+					"keyValue": "v3I1Kn2026KBysrV+hu/qg==",
+					"usage": "Encryption key",
+					"keyId": "3E1AA5C1-F5AC-038F-E525-63BAC6B59A45"
+				},
+				{
+					"keyValue": "s93fh9HPwLBMklMjH/ibnjdO8vQk7ce39LLBDjl4jug=",
+					"usage": "Signing key",
+					"keyId": "4685086E-E9CB-5835-B063-AB20786FFD78"
+				},
+				{
+					"keyValue": "v4I1Kn2026KBysrV+hu/qg==",
+					"usage": "Encryption key",
+					"keyId": "3E1AA5C1-F5AC-038F-E525-64BAC6B59A45"
+				},
+				{
+					"keyValue": "s93fh9HPwLBMklMjH/ibnjdO8vQk7ce39LLBDjl5jug=",
+					"usage": "Signing key",
+					"keyId": "5685086E-E9CB-5835-B063-AB20786FFD78"
+				},
+				{
+					"keyValue": "v5I1Kn2026KBysrV+hu/qg==",
+					"usage": "Encryption key",
+					"keyId": "3E1AA5C1-F5AC-038F-E525-65BAC6B59A45"
+				},
+				{
+					"keyValue": "s93fh9HPwLBMklMjH/ibnjdO8vQk7ce39LLBDjl6jug=",
+					"usage": "Signing key",
+					"keyId": "6685086E-E9CB-5835-B063-AB20786FFD78"
+				},
+				{
+					"keyValue": "v6I1Kn2026KBysrV+hu/qg==",
+					"usage": "Encryption key",
+					"keyId": "3E1AA5C1-F5AC-038F-E525-66BAC6B59A45"
+				},
+				{
+					"keyValue": "s93fh9HPwLBMklMjH/ibnjdO8vQk7ce39LLBDjl7jug=",
+					"usage": "Signing key",
+					"keyId": "7685086E-E9CB-5835-B063-AB20786FFD78"
+				},
+				{
+					"keyValue": "v7I1Kn2026KBysrV+hu/qg==",
+					"usage": "Encryption key",
+					"keyId": "3E1AA5C1-F5AC-038F-E525-67BAC6B59A45"
+				},
+				{
+					"keyValue": "s93fh9HPwLBMklMjH/ibnjdO8vQk7ce39LLBDjl8jug=",
+					"usage": "Signing key",
+					"keyId": "8685086E-E9CB-5835-B063-AB20786FFD78"
+				},
+				{
+					"keyValue": "v8I1Kn2026KBysrV+hu/qg==",
+					"usage": "Encryption key",
+					"keyId": "3E1AA5C1-F5AC-038F-E525-68BAC6B59A45"
+				},
+				{
+					"keyValue": "s93fh9HPwLBMklMjH/ibnjdO8vQk7ce39LLBDjl9jug=",
+					"usage": "Signing key",
+					"keyId": "9685086E-E9CB-5835-B063-AB20786FFD78"
+				}
+			],
+			"persistedLicense": "true",
+			"testName": "Get License"
+		},
+		{
+			"_comment": "<----------------First Pair of Encryption and Signing---------------->",
+			"inputBuffer": "5468697320697320612066756E206865786164C3A963696D616C2062756E6E79",
+			"usage": "encrypt",
+			"keyId": "3E1AA5C1-F5AC-038F-E525-61BAC6B59A45",
+			"expectedOutput": "393847EEA81BB2EBF3786B461080679F525DB0C71B75258C421C00ADD91D8046",
+			"iv": "8DD1127858DA77AE16441D63F592765F",
+			"testName": "Android static encrypt with % 16 padding"
+		},
+		{
+			"inputBuffer": "393847EEA81BB2EBF3786B461080679F525DB0C71B75258C421C00ADD91D8046",
+			"usage": "decrypt",
+			"keyId": "3E1AA5C1-F5AC-038F-E525-61BAC6B59A45",
+			"expectedOutput": "5468697320697320612066756E206865786164C3A963696D616C2062756E6E79",
+			"iv": "8DD1127858DA77AE16441D63F592765F",
+			"testName": "Android static decrypt with % 16 padding"
+		},
+		{
+			"inputBuffer": "5468697320697320612066756E206865786164C3A963696D616C2062756E6E79",
+			"usage": "sign",
+			"keyId": "2685086E-E9CB-5835-B063-AB20786FFD78",
+			"expectedOutput": "5E249C0D0DAB3BAA5541FF0D538DDB407F5F1D6213FB35B05CBA5CFB6D10D680",
+			"testName": "Android static sign"
+		},
+		{
+			"inputBuffer": "5468697320697320612066756E206865786164C3A963696D616C2062756E6E79",
+			"usage": "verify",
+			"keyId": "2685086E-E9CB-5835-B063-AB20786FFD78",
+			"expectedOutput": "Ok",
+			"iv": "5E249C0D0DAB3BAA5541FF0D538DDB407F5F1D6213FB35B05CBA5CFB6D10D680",
+			"testName": "Android static verify Ok"
+		},
+		{
+			"inputBuffer": "5468697320697320612066756E206865786164C3A963696D616C2062756E6E79",
+			"usage": "verify",
+			"keyId": "2685086E-E9CB-5835-B063-AB20786FFD78",
+			"expectedOutput": "verifysignaturefailed",
+			"iv": "CAFEC0C00DAB3BAA5541FF0D538DDB407F5F1D6213FB35B05CBA5CFBCAFEC0C0",
+			"testName": "Android static verify Nok"
+		},
+		{
+			"_comment": "<----------------Fifth Pair of Encryption and Signing---------------->",
+			"inputBuffer": "5468697320697320612066756E206865786164C3A963696D616C2062756E6E79",
+			"usage": "encrypt",
+			"keyId": "3E1AA5C1-F5AC-038F-E525-65BAC6B59A45",
+			"expectedOutput": "644F8276E0946FCC8E6A8340FEAE4A6E31FE120A9A152BE88EA7F5125848A1C5",
+			"iv": "8DD1127858DA77AE16441D63F592765F",
+			"testName": "Android static encrypt with % 16 padding"
+		},
+		{
+			"inputBuffer": "644F8276E0946FCC8E6A8340FEAE4A6E31FE120A9A152BE88EA7F5125848A1C5",
+			"usage": "decrypt",
+			"keyId": "3E1AA5C1-F5AC-038F-E525-65BAC6B59A45",
+			"expectedOutput": "5468697320697320612066756E206865786164C3A963696D616C2062756E6E79",
+			"iv": "8DD1127858DA77AE16441D63F592765F",
+			"testName": "Android static decrypt with % 16 padding"
+		},
+		{
+			"inputBuffer": "5468697320697320612066756E206865786164C3A963696D616C2062756E6E79",
+			"usage": "sign",
+			"keyId": "6685086E-E9CB-5835-B063-AB20786FFD78",
+			"expectedOutput": "A3B1E4D80B95A22F60671D8521AFFA476CCE463CA4D559493A070B08FC56705F",
+			"testName": "Android static sign"
+		},
+		{
+			"inputBuffer": "5468697320697320612066756E206865786164C3A963696D616C2062756E6E79",
+			"usage": "verify",
+			"keyId": "6685086E-E9CB-5835-B063-AB20786FFD78",
+			"expectedOutput": "Ok",
+			"iv": "A3B1E4D80B95A22F60671D8521AFFA476CCE463CA4D559493A070B08FC56705F",
+			"testName": "Android static verify Ok"
+		},
+		{
+			"inputBuffer": "5468697320697320612066756E206865786164C3A963696D616C2062756E6E79",
+			"usage": "verify",
+			"keyId": "6685086E-E9CB-5835-B063-AB20786FFD78",
+			"expectedOutput": "verifysignaturefailed",
+			"iv": "CAFEC0C00DAB3BAA5541FF0D538DDB407F5F1D6213FB35B05CBA5CFBCAFEC0C0",
+			"testName": "Android static verify Nok"
+		},
+		{
+			"_comment": "<----------------Eight Pair of Encryption and Signing---------------->",
+			"inputBuffer": "5468697320697320612066756E206865786164C3A963696D616C2062756E6E79",
+			"usage": "encrypt",
+			"keyId": "3E1AA5C1-F5AC-038F-E525-68BAC6B59A45",
+			"expectedOutput": "71B24F0F1F31F1A6138D72D357AED25E629C6C036F5FA97FF75C055ED97D32A2",
+			"iv": "8DD1127858DA77AE16441D63F592765F",
+			"testName": "Android static encrypt with % 16 padding"
+		},
+		{
+			"inputBuffer": "71B24F0F1F31F1A6138D72D357AED25E629C6C036F5FA97FF75C055ED97D32A2",
+			"usage": "decrypt",
+			"keyId": "3E1AA5C1-F5AC-038F-E525-68BAC6B59A45",
+			"expectedOutput": "5468697320697320612066756E206865786164C3A963696D616C2062756E6E79",
+			"iv": "8DD1127858DA77AE16441D63F592765F",
+			"testName": "Android static decrypt with % 16 padding"
+		},
+		{
+			"inputBuffer": "5468697320697320612066756E206865786164C3A963696D616C2062756E6E79",
+			"usage": "sign",
+			"keyId": "9685086E-E9CB-5835-B063-AB20786FFD78",
+			"expectedOutput": "938CAB14A5B2FBD1BF94E7DA2B26FE5804F23F2C6FF4378455F7B4B467F5DAD5",
+			"testName": "Android static sign"
+		},
+		{
+			"inputBuffer": "5468697320697320612066756E206865786164C3A963696D616C2062756E6E79",
+			"usage": "verify",
+			"keyId": "9685086E-E9CB-5835-B063-AB20786FFD78",
+			"expectedOutput": "Ok",
+			"iv": "938CAB14A5B2FBD1BF94E7DA2B26FE5804F23F2C6FF4378455F7B4B467F5DAD5",
+			"testName": "Android static verify Ok"
+		},
+		{
+			"inputBuffer": "5468697320697320612066756E206865786164C3A963696D616C2062756E6E79",
+			"usage": "verify",
+			"keyId": "9685086E-E9CB-5835-B063-AB20786FFD78",
+			"expectedOutput": "verifysignaturefailed",
+			"iv": "CAFEC0C00DAB3BAA5541FF0D538DDB407F5F1D6213FB35B05CBA5CFBCAFEC0C0",
+			"testName": "Android static verify Nok"
+		}
+	]
+}

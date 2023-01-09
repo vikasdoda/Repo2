@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="TestJSON(failed)">
+    <parameter name="Platform" value="Android"/>
+    <parameter name="DAS_URL" value="${DAS_URL}"/>
+    <parameter name="TOKEN" value="${TOKEN}"/>
+    <classes>
+      <class name="com.nagra.DasTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="DAS"/>
+        </methods>
+      </class> <!-- com.nagra.DasTest -->
+    </classes>
+  </test> <!-- TestJSON(failed) -->
+</suite> <!-- Failed suite [Suite] -->
